@@ -1,5 +1,8 @@
 
 /* Array.from(arrayLike [, mapFn [, thisArg]])
+ - Create a new shallow copy Array
+   - pass by value can't affect original
+   - pass by reference affect both (ex: arry, objs)
 arrayLike means: anything that looks like an array we can convert to array with Array.from
  - string
  - HTMLCollection and NodeList  elements
@@ -49,3 +52,10 @@ const af = Array.from(ALO)
 const ap = Array.prototype.slice.call(ALO, 0)
 const sp = [...ALO]
 console.log(af === ap, af === sp, ap === sp)
+
+// form arguments
+function args () {
+  const argsArray = Array.from(arguments)
+  console.log(argsArray)
+}
+args(0, 'Hi', { name: 'sachin' })

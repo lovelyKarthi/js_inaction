@@ -1,4 +1,5 @@
 # js_inaction
 
 - TODO 
-- - how remove duplicate from an Array
+    - how many way's we can remove duplicate from an Array
+    - Iterable objects in js
